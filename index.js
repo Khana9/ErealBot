@@ -111,41 +111,5 @@ client.on("guildMemberAdd", (member) => {
   member.send(embed)
 })
 
-
-
 /** Bot token */
 client.login(process.env.TOKEN)
-
-
-
-
-
-
-
-
-
-
-
-
-// Reserved code
-
-/**let { hangman } = require('reconlx');
-const mongoose = require('mongoose');
-exports.run = async (client, message, args) => {
-    let lastMessage = await message.channel.messages.fetch
-    let channel = message.channel
-    let word = args.slice(1).join(" ");
-    let hang = ({
-        message: message,
-        word: word,
-        client: client,
-        channelId: channel.id
-    })
-    if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('Peasant')
-    if(!channel) return message.channel.send("Specify channel dumbass")
-    if(!word) return message.channel.send("Not za word sowwy")
-    hang.start();
-    }
-    exports.help = {
-        name: "hangman"
-    } */
