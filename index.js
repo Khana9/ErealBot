@@ -114,4 +114,3 @@ client.on("guildMemberAdd", (member) => {
 /** Bot token */
 client.login(process.env.TOKEN)
 
-// hello
