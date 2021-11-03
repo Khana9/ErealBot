@@ -6,7 +6,6 @@ exports.run = async (client, message, args) => {
     if (message.content.includes("meme")) {
         got("https://meme-api.herokuapp.com/gimme").then((response) => {
             const data = JSON.parse(response.body);
-
             let meme = new MessageEmbed()
                 .setTitle(`${data['title']}`)
                 .setColor("RANDOM")
@@ -18,8 +17,6 @@ exports.run = async (client, message, args) => {
         });
     }
 }
-
-
 exports.help = {
     name: "meme"
 }
