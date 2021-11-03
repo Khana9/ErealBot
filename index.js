@@ -58,34 +58,6 @@ client.on("message", (message) => {
 })
 
 
-
-
-
-
-/** Code for the meme command */
-client.on('message', msg => {
-  
-  if (msg.content.includes("meme")) {
-    got("https://meme-api.herokuapp.com/gimme").then((response) => {
-      const data = JSON.parse(response.body);
-      
-      let meme = new MessageEmbed()
-        .setTitle(`${data['title']}`)
-        .setColor("RANDOM")
-        .setDescription("Upvotes:" + " " + `${data['ups']}` + ".\n" + "Subreddit:" + " " + `${data['subreddit']}`)
-        .setAuthor("Author:" + " " + `${data['author']}`)
-        .setImage(`${data['url']}`)
-      
-        msg.channel.send(meme);
-    });
-  }
-})
-
-
-
-
-
-
 // This will DM the member if they change their nickname
 client.on("guildMemberUpdate", (oldMember, newMember) => {
   
