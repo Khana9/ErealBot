@@ -114,4 +114,4 @@ client.on("guildMemberAdd", (member) => {
 /** Bot token */
 client.login(process.env.TOKEN)
 
-// Hi, it's Om checking out the repository
+
