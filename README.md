@@ -3,6 +3,7 @@
 <h3 align="center">We are a small group of passionate programmers looking to make some fun projects :)</h3>
 
 - 🔭 We currently working on **maintaining and improving our discord bot.**
+- This bot runs on discord.js
 
 ## Moderation commands:
 
@@ -14,18 +15,18 @@
 
 ## Games (STILL IN THE WORKS):
 ### Feeling bored? Dont worry!, the bot has you covered!
-#### -hangman.random, creates a hangman game for you and your friends to join, Beware, it aint easy!.
-#### -hangman.custom, a player can choose their own word and everyone else can try guess it!.
+#### **-hangman.random**, creates a hangman game for you and your friends to join, Beware, it aint easy!.
+#### **-hangman.custom**, a player can choose their own word and everyone else can try guess it!.
 
 ## Predictions:
-#### -rolldice, rolls a die with 6 sides
-#### -8ball, need an answer? 8ball has you covered!
-#### -coinflip, flips a coin (In the works)
+#### **-rolldice**, rolls a die with 6 sides
+#### **-8ball**, need an answer? 8ball has you covered!
+#### **-coinflip**, flips a coin (In the works)
 
 ## General:
-#### -ping, checks the bots latency
-#### -hello, replies with hello!
-#### -meme, sends a meme
+#### **-ping**, checks the bots latency
+#### **-hello**, replies with hello!
+#### **-meme**, sends a meme
 
 ### Feeling lost? Try **-help** to get a **full** list of commands currently integrated.
 
