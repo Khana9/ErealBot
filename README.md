@@ -17,6 +17,16 @@
 #### -hangman.random, creates a hangman game for you and your friends to join, Beware, it aint easy!.
 #### -hangman.custom, a player can choose their own word and everyone else can try guess it!.
 
+## Predictions:
+#### -rolldice, rolls a die with 6 sides
+#### -8ball, need an answer? 8ball has you covered!
+#### -coinflip, flips a coin (In the works)
+
+## General:
+#### -ping, checks the bots latency
+#### -hello, replies with hello!
+#### -meme, sends a meme
+
 ### Feeling lost? Try **-help** to get a **full** list of commands currently integrated.
 
 
