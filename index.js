@@ -74,7 +74,7 @@ client.on("guildMemberAdd", (member) => {
     
     /** Description */ 
     .setTitle("Welcome to the server!")
-    .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}\n**Bot created by:** (TO BE CHANGED)`)
+    .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}\n**Check out the contributers here:** https://github.com/Khana9/ErenBegger/graphs/contributors`)
     .setColor("#cc3300")
     .setAuthor(member.guild.owner.user.tag, member.guild.owner.user.avatarURL())
     .setFooter(member.guild.name, member.guild.iconURL())
