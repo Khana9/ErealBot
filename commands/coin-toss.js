@@ -6,5 +6,5 @@ exports.run = async(client,message,args) =>{
     return message.reply(GoCoin());
     }
 exports.help = {
-    name = "coin-toss"
+    name : "cointoss"
 }
