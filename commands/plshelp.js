@@ -7,3 +7,4 @@ exports.run = async (client,message,args) => {
 exports.help = {
     name: "plshelp"
 }
+/**Suggested by https://github.com/paulinaad2 */
