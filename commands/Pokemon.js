@@ -5,7 +5,7 @@ const game = new Pokemon({
   winMessage: 'You Win!',
   loseMessage: 'You Lose!',
   wrongGuess: 'Wrong Guess!',
-  stopCommand = 'stop',
+  stopCommand: 'stop',
   maxAttempts: 10,
 })
 game.start()
