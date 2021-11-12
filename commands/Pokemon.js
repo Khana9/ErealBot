@@ -1,7 +1,7 @@
 const { Pokemon } = require('djs-games')
 const game = new Pokemon({
   message: message,
-  token: 'MTYzNjAxODA5Ng.QjGO5CRCiWoGM1FUktUkzq9wvU3bbFlz.e52e54e3ddc51799',
+  token: '',
   winMessage: 'You Win!',
   loseMessage: 'You Lose!',
   wrongGuess: 'Wrong Guess!',
