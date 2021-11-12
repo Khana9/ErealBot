@@ -1,5 +1,5 @@
 exports.run = async(client,message,args) =>{
-    function GoTOD(){
+    function Go8Ball(){
         var rand = ['When was the last time you lied?',
 
 'When was the last time you cried?',
