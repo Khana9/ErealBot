@@ -13,6 +13,7 @@
     "discord-hangman": "^1.2.2",
     "discord-reply": "^0.1.2",
     "discord.js": "^12.5.3",
+    "djs-games": "^2.1.10",
     "dotenv": "^10.0.0",
     "got": "^11.8.2",
     "gpg": "^0.6.0",
