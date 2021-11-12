@@ -1,7 +1,9 @@
 require("discord-reply");
 require('dotenv').config();
+require('djs-games')
 
 const Discord = require('discord.js');
+const { Pokemon } = require('djs-games')
 const PREFIX = '';
 const client = new Discord.Client({ ws: { intents: Discord.Intents.ALL } });
 const fs = require("fs") /** Commands will be stores here */

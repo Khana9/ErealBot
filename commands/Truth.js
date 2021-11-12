@@ -48,5 +48,5 @@ exports.run = async(client,message,args) =>{
     return message.reply(Go8Ball());
     }
 exports.help = {
-    name : "T"
+    name: "t"
 }
