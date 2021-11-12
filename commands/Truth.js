@@ -10,7 +10,7 @@ exports.run = async(client,message,args) =>{
 
 'Do you have any fetishes?',
 
-'What is something you are glad your mum does not know about you?'
+'What is something you are glad your mum does not know about you?',
 
 'Have you ever cheated on someone?',
 
@@ -36,7 +36,7 @@ exports.run = async(client,message,args) =>{
 
 'What is your biggest regret?',
 
-'What is the biggest misconception about you?'
+'What is the biggest misconception about you?',
 
 'Why did your last relationship break down?',
 
