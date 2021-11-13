@@ -8,7 +8,7 @@ module.exports = new Command({
     async run(message, args, client) {
 const game = new GTF({
   message: message,
-  token: 'TOKEN',
+  token: 'dj-token',
   stopCommand: 'stop',
   winFooter: 'You Win!',
   winColor: 'GREEN',
