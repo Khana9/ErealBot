@@ -1,5 +1,6 @@
 const { Pokemon } = require('djs-games')
 const Command = require("../Structures/Command.js");
+const config = require("./config.json");
 
 module.exports = new Command({
 	name: "pokemon",
