@@ -6,8 +6,8 @@
 - This bot runs on discord.js
 #### UPDATED TO DISCORD V13
 ## Moderation commands:
-## CURRENTLY IN A CODE OVERHAUL
-### Our bot includes essential commands for every server such as 
+
+###  Our bot includes essential commands for every server such as 
 #### **-ban**, to ban a user 
 #### **-kick**, to kick a user
 #### **-mute**, to mute a user, with a timer
