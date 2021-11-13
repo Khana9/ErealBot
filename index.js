@@ -1,7 +1,7 @@
 /**Start of index.js */
 
 console.clear();
-
+require('dotenv').config()
 
 const Client = require("./Structures/Client.js");
 const { MessageEmbed } = require("discord.js");

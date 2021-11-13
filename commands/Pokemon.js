@@ -1,6 +1,6 @@
 const { Pokemon } = require('djs-games')
 const Command = require("../Structures/Command.js");
-const config = require("./config.json");
+require('dotenv').config()
 
 module.exports = new Command({
 	name: "pokemon",
@@ -8,7 +8,7 @@ module.exports = new Command({
     async run(message, args, client) {
 const game = new Pokemon({
   message: message,
-  token: config.dj-token, 
+  token: 'MTYzNjAxODA5Ng.QjGO5CRCiWoGM1FUktUkzq9wvU3bbFlz.e52e54e3ddc51799', 
   winMessage: 'You Win!',
   loseMessage: 'You Lose!',
   wrongGuess: 'Wrong Guess!',
