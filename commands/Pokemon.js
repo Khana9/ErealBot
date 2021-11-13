@@ -7,7 +7,7 @@ module.exports = new Command({
     async run(message, args, client) {
 const game = new Pokemon({
   message: message,
-  token: 'TOKEN', 
+  token: config.dj-token, 
   winMessage: 'You Win!',
   loseMessage: 'You Lose!',
   wrongGuess: 'Wrong Guess!',
