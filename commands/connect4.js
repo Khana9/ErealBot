@@ -1,3 +1,4 @@
+const Command = require("../Structures/Command.js");
 const { ConnectFour } = require('djs-games')
 module.exports = new Command({
   name: "Connect4",
