@@ -1,4 +1,4 @@
-const { TicTacToe } = require('djs-games')
+const { Snake } = require('djs-games')
 const Command = require("../Structures/Command.js");
 module.exports = new Command({
   name: "Snake",
