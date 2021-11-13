@@ -1,87 +1,63 @@
-require("discord-reply");
-require('dotenv').config();
+/**Start of index.js */
 
-const Discord = require('discord.js');
-const PREFIX = '';
-const client = new Discord.Client({ ws: { intents: Discord.Intents.ALL } });
-const fs = require("fs") /** Commands will be stores here */
-const got = require("got");
+console.clear();
+
+
+const Client = require("./Structures/Client.js");
 const { MessageEmbed } = require("discord.js");
-client.commands = new Discord.Collection();
+const config = require("./config.json");
+const Command = require("./Structures/Command.js");
+const client = new Client();
+const fs = require("fs");
 
-/**When the bot is ready and to load in the commands */
-client.on("ready", () => {
-  console.log("Bot is ready")
-  
-  /**To fetch the commands */
-  fs.readdir("./commands", (err, files) => {
-    if (err) return console.log(err);
-    
-    /**To remove the .js of the files */
-    let jsfile = files.filter(f => f.split(".").pop() == "js")
-    if (jsfile.length == 0) { return console.log("No commands here!") }
-
-    jsfile.forEach(f => {
-      let props = require(`./commands/${f}`)
-      client.commands.set(props.help.name, props)
-    })
-  })
-})
-
-/**To assign the prefix of the box and use that */
-client.on("message", (message) => {
-  
-  /** this will make sure the bot dosent act on its own messages */
-  if (message.author.bot) return;
-  
-  if (message.channel.type !== "text") return;
-  /**If it isnt a text channel, return */
-  
-  /**This assigns the prefix for the bot */
-  let prefix = "-";
-
-  /**This will remove the prefix to make the command readable */
-  let MessageArray = message.content.split(" ");
- 
-  /**This removes the prefix*/
-  let cmd = MessageArray[0].slice(prefix.length)
-
-  /**This takes in the command */
-  let args = MessageArray.slice(1)
-
-  /**Failsafes, if the message dosent include prefix bot does nothing */
-  if (!message.content.startsWith(prefix)) return;
-
-  let commandfile = client.commands.get(cmd);
-  if (commandfile) { commandfile.run(client, message, args) }
-
-})
+fs.readdirSync("./Commands")
+	.filter(file => file.endsWith(".js"))
+	.forEach(file => {
+		/**
+		 * @type {Command}
+		 */
+		const command = require(`./Commands/${file}`);
+		console.log(`Command ${command.name} loaded`);
+		client.commands.set(command.name, command);
+	});
 
 
-// This will DM the member if they change their nickname
-client.on("guildMemberUpdate", (oldMember, newMember) => {
-  
-  if (oldMember.nickname !== newMember.nickname) {
-    newMember.send("Hey there, You just changed your nickname!")
-  }
-})
 
+
+
+    client.on("ready", () => console.log("Bot is ready!"));
+
+
+
+
+client.on("messageCreate", message => {
+	if (message.author.bot) return;
+
+	if (!message.content.startsWith(config.prefix)) return;
+
+	const args = message.content.substring(config.prefix.length).split(/ +/);
+
+	const command = client.commands.find(cmd => cmd.name == args[0]);
+
+	if (!command) return;
+
+	command.run(message, args, client);
+});
 
 // This will DM new members
-client.on("guildMemberAdd", (member) => {
+client.on("guildMemberAdd", async (member) => {
+    const owner = await guild.fetchOwner()
+    let embed = new MessageEmbed()
+      
+      /** Description */ 
+      .setTitle("Welcome to the server!")
+      .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}\n**Check out the contributers here:** https://github.com/Khana9/ErenBegger/graphs/contributors`)
+      .setColor("#cc3300")
+      .setAuthor(owner.username, owner.avatarURL())
+      .setFooter(member.guild.name, member.guild.iconURL())
+      .setThumbnail(member.user.avatarURL());
   
-  let embed = new Discord.MessageEmbed()
-    
-    /** Description */ 
-    .setTitle("Welcome to the server!")
-    .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}\n**Check out the contributers here:** https://github.com/Khana9/ErenBegger/graphs/contributors`)
-    .setColor("#cc3300")
-    .setAuthor(member.guild.owner.user.tag, member.guild.owner.user.avatarURL())
-    .setFooter(member.guild.name, member.guild.iconURL())
-    .setThumbnail(member.user.avatarURL());
+    member.send({ embeds: [embed] })
+  })
 
-  member.send(embed)
-})
-
-/** Bot token */
-client.login(process.env.TOKEN)
+client.login(config.token);

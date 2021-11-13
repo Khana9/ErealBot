@@ -1,9 +1,10 @@
-exports.run = async (client,message,args) => {
-        
-    message.lineReply("yo whassup")
-     
-}
+const Command = require("../Structures/Command.js");
 
-exports.help = {
-    name: "yo"
-}
+module.exports = new Command({
+	name: "yo",
+	description: "says yo!",
+
+	async run(message, args, client) {
+		message.reply("Yo, whassup!");
+	}
+});

@@ -1,6 +1,12 @@
 const got = require("got");
 const { MessageEmbed } = require("discord.js");
-exports.run = async (client, message, args) => {
+
+const Command = require("../Structures/Command.js");
+
+module.exports = new Command({
+	name: "meme",
+	description: "sends a meme!",
+    async run(message, args, client) {
 
     /** Code for the meme command */
     if (message.content.includes("meme")) {
@@ -13,10 +19,8 @@ exports.run = async (client, message, args) => {
                 .setAuthor("Author:" + " " + `${data['author']}`)
                 .setImage(`${data['url']}`)
 
-            message.channel.send(meme);
+            message.channel.send({ embeds: [meme] });
         });
     }
 }
-exports.help = {
-    name: "meme"
-}
+})

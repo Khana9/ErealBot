@@ -1,28 +1,29 @@
 {
-  "name": "discord",
+  "name": "v13-tester",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "axios": "^0.24.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.24.0",
     "discord-hangman": "^1.2.2",
-    "discord-reply": "^0.1.2",
-    "discord.js": "^12.5.3",
+    "discord.js": "^13.3.1",
     "djs-games": "^2.1.10",
     "dotenv": "^10.0.0",
     "got": "^11.8.2",
-    "gpg": "^0.6.0",
-    "mongoose": "^6.0.12",
     "ms": "^2.1.3",
-    "node": "^17.0.1",
-    "node-fetch": "^3.1.0",
-    "random-unicode-emoji": "^1.0.2",
-    "reconlx": "^2.5.1",
-    "touch": "^3.1.0"
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "discord-reply": "^0.1.2"
   }
 }

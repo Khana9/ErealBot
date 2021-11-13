@@ -1,4 +1,10 @@
-exports.run = async(client,message,args) =>{
+const Command = require("../Structures/Command.js");
+
+module.exports = new Command({
+	name: "T",
+	description: "You must say the truth....",
+
+	async run(message, args, client) {
     function Go8Ball(){
         var rand = ['When was the last time you lied?',
 
@@ -47,6 +53,4 @@ exports.run = async(client,message,args) =>{
     }
     return message.reply(Go8Ball());
     }
-exports.help = {
-    name: "t"
-}
+})

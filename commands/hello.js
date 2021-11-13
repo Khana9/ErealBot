@@ -1,11 +1,10 @@
-exports.run = async (client, message, args) => {
-    let member = message.mentions.members.first();
-    
-    if (!member) { message.channel.send("hello"); } else {
-        message.lineReply(`Heya @${member.user.tag}`)
-    }
-}
+const Command = require("../Structures/Command.js");
 
-exports.help = {
-    name: "hello"
-}
+module.exports = new Command({
+	name: "hello",
+	description: "says Hello!",
+
+	async run(message, args, client) {
+		message.reply("Hello!");
+	}
+});
