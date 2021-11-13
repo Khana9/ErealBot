@@ -1,4 +1,3 @@
-<<<<<<< HEAD:commands/plshelp.js
 const { MessageEmbed } = require("discord.js");
 
 const Command = require("../Structures/Command.js");
