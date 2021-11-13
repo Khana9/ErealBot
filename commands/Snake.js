@@ -4,8 +4,9 @@ module.exports = new Command({
   name: "Snake",
   description: "Play the classic snake game!",
   async run(message, args, client) {
-   message: message,
-  buttons: true,
+  const game = new Snake({
+  message: message,
+  buttons: true, 
   snake: '🟩',
   apple: '🍎',
   embedColor: 'RANDOM',
@@ -13,7 +14,8 @@ module.exports = new Command({
   rightButton: '▶',
   upButton: '▲',
   downButton: '▼',
-})
-game.start()
+});
+    game.start();
   },
 });
+
