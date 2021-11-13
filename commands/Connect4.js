@@ -4,7 +4,7 @@ module.exports = new Command({
   name: "Connect4",
   description: "Play connect 4!",
   async run(message, args, client) {
-    const game = new GTF({
+    const game = new ConnectFour({
       message: message,
       token: "",
       stopCommand: "stop",
