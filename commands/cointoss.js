@@ -13,3 +13,4 @@ module.exports = new Command({
     return message.reply(GoCoin());
     }
 })
+
