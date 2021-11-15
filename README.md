@@ -8,32 +8,31 @@
 ## Moderation commands:
 
 ###  Our bot includes essential commands for every server such as 
-#### **--ban**, to ban a user 
-#### **--kick**, to kick a user
-#### **--mute**, to mute a user, with a timer
+#### **-ban**, to ban a user 
+#### **-kick**, to kick a user
+#### **-mute**, to mute a user, with a timer
 
 
 ## Games (STILL IN THE WORKS):
 ### Feeling bored? Dont worry!, the bot has you covered!
-#### **--Gflag**, guess the countrys flag!
-#### **--Glogo**, can you guess the logo?
-#### **--Pokemon**, Can you guess that pokemon?
-#### **--T**, Say the truth or else....
-
-
-
+#### **-Gflag**, guess the countrys flag!
+#### **-Glogo**, can you guess the logo?
+#### **-Pokemon**, Can you guess that pokemon?
+#### **-T**, Say the truth or else....
+### **-FPS**, Play rock paper scissors with the bot!
+### **-connect4, Play connect4 with your friends!
+#### **-meme**, sends a meme
 
 ## Predictions:
-#### **--rolldice**, rolls a die with 6 sides
-#### **--8ball**, need an answer? 8ball has you covered!
-#### **--cointoss**, toss a coin: heads, tails or inbetween!
+#### **-rolldice**, rolls a die with 6 sides
+#### **-8ball**, need an answer? 8ball has you covered!
+#### **-cointoss**, toss a coin: heads, tails or inbetween!
 
 ## General:
-#### **--ping**, checks the bots latency
-#### **--hello**, replies with hello!
-#### **--meme**, sends a meme
-#### **--yo**, yo!
-#### **--plshelp**, Some very special help
+#### **-ping**, checks the bots latency
+#### **-hello**, replies with hello!
+#### **-yo**, yo!
+#### **-plshelp**, Some very special help
 
 ### Feeling lost? Try **--help** to get a **full** list of commands currently integrated.
 
