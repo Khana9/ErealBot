@@ -1,6 +1,6 @@
 
 const Discord = require("discord.js");
-const Command = require('./command.js')
+const Command = require('./Command.js')
 
 const intents = new Discord.Intents(32767);
 
