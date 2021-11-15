@@ -1,7 +1,7 @@
 const Command = require("../Structures/Command.js");
 const { ConnectFour } = require('djs-games')
 module.exports = new Command({
-  name: "Connect4",
+  name: "connect4",
   description: "Play connect 4!",
   async run(message, args, client) {
     const game = new ConnectFour({
