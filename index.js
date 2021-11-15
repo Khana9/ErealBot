@@ -10,13 +10,13 @@ const Command = require("./Structures/Command.js");
 const client = new Client();
 const fs = require("fs");
 
-fs.readdirSync("./Commands")
+fs.readdirSync("./commands")
 	.filter(file => file.endsWith(".js"))
 	.forEach(file => {
 		/**
 		 * @type {Command}
 		 */
-		const command = require(`./Commands/${file}`);
+		const command = require(`./commands/${file}`);
 		console.log(`Command ${command.name} loaded`);
 		client.commands.set(command.name, command);
 	});
