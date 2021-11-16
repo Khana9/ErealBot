@@ -46,14 +46,12 @@ client.on("messageCreate", message => {
 
 // This will DM new members
 client.on("guildMemberAdd", async (member) => {
-    const owner = await guild.fetchOwner()
     let embed = new MessageEmbed()
       
       /** Description */ 
       .setTitle("Welcome to the server!")
-      .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}\n**Check out the contributers here:** https://github.com/Khana9/ErenBegger/graphs/contributors`)
+      .setDescription(`Thanks for joining the server! Make sure to read the rules at #rules! :flushed:\n**Current Member Count:** ${member.guild.memberCount}\n**Check out the contributers here:** https://github.com/Khana9/ErenBegger/graphs/contributors`)
       .setColor("#cc3300")
-      .setAuthor(owner.username, owner.avatarURL())
       .setFooter(member.guild.name, member.guild.iconURL())
       .setThumbnail(member.user.avatarURL());
   
