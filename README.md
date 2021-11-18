@@ -20,7 +20,7 @@
 #### **--Pokemon**, Can you guess that pokemon?
 #### **--T**, Say the truth or else....
 #### **--FPS**, Play rock paper scissors with the bot!
-#### **--connect4, Play connect4 with your friends!
+#### **--connect4**, Play connect4 with your friends!
 #### **--meme**, sends a meme
 
 ## Predictions:
