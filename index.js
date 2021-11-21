@@ -56,6 +56,7 @@ client.on("guildMemberAdd", async (member) => {
       .setThumbnail(member.user.avatarURL());
   
     member.send({ embeds: [embed] })
+	.catch(() => message.reply("Can't send DM to your user!"));
   })
 
 client.login(config.token);
