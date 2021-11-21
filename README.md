@@ -1,6 +1,6 @@
 # Welcome to our discord bot!
 
-<h3 align="center">We are a small group of passionate programmers looking to make some fun projects :)</h3>
+<h3 align="left">We are a small group of passionate programmers looking to make some fun projects :)</h3>
 
 - 🔭 We currently working on **maintaining and improving our discord bot.**
 - This bot runs on discord.js
@@ -20,7 +20,7 @@
 #### **--Pokemon**, Can you guess that pokemon?
 #### **--T**, Say the truth or else....
 #### **--FPS**, Play rock paper scissors with the bot!
-#### **--connect4, Play connect4 with your friends!
+#### **--connect4**, Play connect4 with your friends!
 #### **--meme**, sends a meme
 
 ## Predictions:
