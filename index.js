@@ -3,6 +3,7 @@
 console.clear();
 require('dotenv').config()
 
+const mongoose = require('mongoose');
 const Client = require("./Structures/Client.js");
 const { MessageEmbed } = require("discord.js");
 const config = require("./config.json");
