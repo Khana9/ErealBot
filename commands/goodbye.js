@@ -10,7 +10,7 @@ module.exports = new Command({
     let member = message.mentions.members.first();
     
     if (!member) { message.channel.send("Goodbye!"); } else {
-        message.lineReply(`Goodbye! @${member.user.tag}`)
+        message.reply(`Goodbye! @${member.user.tag}`)
     }
 }
 
