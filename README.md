@@ -7,7 +7,7 @@
 #### UPDATED TO DISCORD V13
 ## Moderation commands:
 
-###  Our bot includes essential commands for every server such as 
+###  (IN THE REWORKS FOR V13) Our bot includes essential commands for every server such as 
 #### **--ban**, to ban a user 
 #### **--kick**, to kick a user
 #### **--mute**, to mute a user, with a timer
