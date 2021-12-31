@@ -6,7 +6,7 @@ module.exports = new Command({
     async run(message, args, client) {
 
     function Go8Ball(){
-        var rand = ['Yes', 'No', 'Why are you even trying?', 'Find the answer on your own yeesh, loser.']
+        var rand = ['Yes', 'No', 'Why are you even trying?', 'Find the answer on your own yeesh, loser.', 'Never', 'Never in a million years', 'Obviously, use your brain', 'Stfu no']
         return rand[Math.floor(Math.random() * rand.length)];
     }
     return message.reply(Go8Ball());
