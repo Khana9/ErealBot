@@ -10,7 +10,7 @@ const config = require("./config.json");
 const Command = require("./Structures/Command.js");
 const client = new Client();
 const fs = require("fs");
-
+	/**Import the commmands folder */
 fs.readdirSync("./commands")
 	.filter(file => file.endsWith(".js"))
 	.forEach(file => {
@@ -25,7 +25,7 @@ fs.readdirSync("./commands")
 
 
 
-
+	/**This will let us know when the bot is ready */
     client.on("ready", () => console.log("Bot is ready!"));
 
 
