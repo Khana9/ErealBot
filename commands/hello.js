@@ -5,6 +5,6 @@ module.exports = new Command({
 	description: "says Hello!",
 
 	async run(message, args, client) {
-		message.reply("Hello!");
+		message.reply("Hello there!");
 	}
 });
